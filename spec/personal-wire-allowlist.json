@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "path": "bot/im/message_operations.go",
+      "line": 559,
+      "matched_text": "interactivity_personal_msg_content",
+      "category": "wire_url_or_route_id",
+      "service_contract_reference": "POST_im_streaming_card_update_user",
+      "reason": "The service route contains the legacy wire term."
+    }
+  ]
+}

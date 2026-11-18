@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package infoflow;
+
+option go_package = "github.com/dolfly/infoflow/bot/websocket/framepb;framepb";
+
+message Header {
+  string key = 1;
+  string value = 2;
+}
+
+message Frame {
+  uint64 seq_id = 1;
+  string log_id = 2;
+  int32 service = 3;
+  int32 method = 4;
+  repeated Header headers = 5;
+  bytes payload = 6;
+}

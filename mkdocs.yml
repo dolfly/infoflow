@@ -1,0 +1,62 @@
+site_name: InfoFlow Go SDK
+site_description: InfoFlow OpenAPI 的 Go 客户端
+site_url: https://dolfly.github.io/infoflow/
+repo_url: https://github.com/dolfly/infoflow
+repo_name: dolfly/infoflow
+edit_uri: edit/main/docs/
+
+docs_dir: docs
+exclude_docs: |
+  internal/*
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - search.highlight
+    - search.suggest
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+
+nav:
+  - 首页: index.md
+  - 安装: install.md
+  - 快速开始: quickstart.md
+  - 使用指南: usage.md
+  - AI 动态卡: dynamic-card.md
+  - API 参考: API_REFERENCE.md
+  - 常见问题: faq.md
+  - 测试与验证: TESTING.md
+  - 行为契约: https://github.com/dolfly/infoflow/blob/main/CONTRACT.md
+  - 架构: https://github.com/dolfly/infoflow/blob/main/ARCHITECTURE.md
+  - 变更历史: https://github.com/dolfly/infoflow/blob/main/CHANGELOG.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+strict: true
